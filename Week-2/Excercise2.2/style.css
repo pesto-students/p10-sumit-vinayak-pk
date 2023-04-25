@@ -1,0 +1,57 @@
+
+.container{
+    width: 400px;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;  
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+
+.container::after{
+    position: absolute;
+    content: 'Hi!';
+    font-size: 36px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.box{
+    width: 50%;
+    height: 50%;
+    transition: all 1s ease-in-out;
+    z-index: 2;
+}
+.container:hover #box1{
+    transform: translate(-100px,0px) rotate(90deg);
+}
+#box1{
+    background-color: red;
+
+}
+
+
+#box2{
+    background-color: yellow;
+}
+.container:hover #box2{
+    transform: translate(100px,0px) rotate(-90deg);
+}
+
+#box3{
+    background-color: blue;
+}
+
+.container:hover #box3{
+    transform: translate(-100px,0px) rotate(-90deg);
+}
+#box4{
+    background-color: green;
+}
+.container:hover #box4{
+    transform: translate(100px,0px) rotate(90deg);
+}
