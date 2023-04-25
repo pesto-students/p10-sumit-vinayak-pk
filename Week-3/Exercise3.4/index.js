@@ -1,8 +1,8 @@
 function createStack(){
     const items  = [];
     return {
-        items,
-        push:function(val){
+        items, // will return items reference
+        push:function(val){ // push function
            items.push(val);
         },
         pop: function(){
